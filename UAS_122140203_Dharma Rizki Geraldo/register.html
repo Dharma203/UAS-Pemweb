@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Register</h1>
+      <form method="POST" action="process_register.php">
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+
+        <label>
+          <input type="radio" name="gender" value="Male" required /> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Female" required /> Female
+        </label>
+
+        <!-- Cookie Consent Checkbox -->
+        <label>
+          <input type="checkbox" name="cookie_consent" required /> Saya setuju dengan penggunaan cookie.
+        </label>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <!-- Tombol Kembali ke Beranda -->
+      <div class="back-button">
+        <a href="index.html">
+          <button>Kembali ke Beranda</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

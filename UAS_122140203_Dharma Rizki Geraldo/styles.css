@@ -1,0 +1,381 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:#fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #2575fc;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1e60c1;
+}
+
+.btn-secondary {
+  background: #ff4b2b;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #ff416c;
+}
+
+/* Form Container Styling */
+.form-container {
+  background: #fff;
+  color: #2c2c54;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-out;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4e54c8;
+  font-size: 1.8em;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="radio"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #555;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus {
+  border-color: #4e54c8;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #ffde59, #ffa94d);
+  color: #2c2c54;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ffc857, #ff8e42);
+  transform: translateY(-3px);
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+a {
+  color: #4e54c8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8f94fb;
+}
+
+/* Table Styling */
+.table-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead {
+  background: #4e54c8;
+  color: #fff;
+}
+
+thead th {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f5f6fa;
+}
+
+tbody tr:nth-child(even) {
+  background: #d1e3ff;
+}
+
+tbody td {
+  padding: 12px 10px;
+  text-align: center;
+}
+
+tbody tr:hover {
+  background: #c4d4ff;
+}
+
+/* Navigation Styling */
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px;
+  background: #d1e3ff;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+  background: #4e54c8;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .form-container {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+
+  .table-container {
+    padding: 15px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 25px;
+  }
+}
+
+/* Styling untuk Tombol Kembali */
+.back-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button button {
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.back-button button:hover {
+  background-color: #8f94fb;
+  transform: translateY(-3px);
+}
+
+.back-button a {
+  text-decoration: none;
+}
+
+/* Styling Tombol untuk Add New User, Edit, dan Delete */
+button.add-user,
+button.edit-user,
+button.delete-user {
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button.add-user {
+  background-color: #27ae60; /* Green for Add User */
+}
+
+button.add-user:hover {
+  background-color: #2ecc71;
+  transform: translateY(-2px);
+}
+
+button.edit-user {
+  background-color: #f39c12; /* Yellow for Edit User */
+}
+
+button.edit-user:hover {
+  background-color: #f1c40f;
+  transform: translateY(-2px);
+}
+
+button.delete-user {
+  background-color: #e74c3c; /* Red for Delete User */
+}
+
+button.delete-user:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Styling untuk Icon dalam Tombol */
+button.add-user i,
+button.edit-user i,
+button.delete-user i {
+  font-size: 1.2rem;
+}
+
+/* Styling untuk Tombol Kembali */
+button.back {
+  background-color: #bdc3c7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button.back:hover {
+  background-color: #95a5a6;
+  transform: translateY(-2px);
+}
