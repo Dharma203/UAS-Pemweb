@@ -53,3 +53,49 @@ Setelah data divalidasi, kita menyimpannya ke dalam database bersama dengan info
 ### 2.2 Objek PHP Berbasis OOP
 
 Untuk meningkatkan struktur kode, kita menggunakan Pemrograman Berorientasi Objek (OOP) dalam PHP.
+
+#### 2.2.1 Membuat Objek PHP dengan Minimal Dua Metode
+
+## Bagian 3: Database Management
+
+### 3.1 Pembuatan Tabel Database
+
+Pada bagian ini, kita membuat tabel users di database untuk menyimpan data pengguna. Tabel ini mencakup kolom untuk ID, nama, email, password, dan peran pengguna.
+
+### 3.2 Konfigurasi Koneksi Database
+
+Koneksi database dilakukan dengan menggunakan file PHP yang menyertakan konfigurasi untuk menghubungkan aplikasi dengan database MySQL.
+
+### 3.3 Manipulasi Data pada Database
+
+Data pengguna dimasukkan ke dalam tabel menggunakan query SQL
+
+## Bagian 4: State Management
+
+### 4.1 State Management dengan Session
+
+State management digunakan untuk melacak status pengguna di aplikasi. Salah satu cara untuk mengelola state adalah dengan menggunakan sesi (session_start()), yang memungkinkan kita untuk menyimpan informasi pengguna selama sesi mereka berlangsung.
+
+#### 4.1.1 Memulai Session
+
+Session dimulai dengan menggunakan fungsi session_start(). Informasi pengguna kemudian disimpan dalam session.
+
+#### 4.1.2 Menyimpan Informasi Pengguna ke dalam Session
+
+Informasi seperti nama pengguna dan peran disimpan dalam session untuk dapat digunakan di seluruh aplikasi.
+
+### 4.2 Pengelolaan State dengan Cookie dan Browser Storage
+
+Cookies dan browser storage digunakan untuk menyimpan data secara lokal di sisi klien.
+
+#### 4.2.1 Menetapkan, Mendapatkan, dan Menghapus Cookie
+
+Untuk menetapkan cookie, kita menggunakan fungsi setcookie()
+
+#### 4.2.2 Menggunakan Browser Storage
+
+Browser storage (localStorage) dapat digunakan untuk menyimpan informasi di sisi klien
+
+# Kesimpulan
+
+Proyek ini mencakup berbagai aspek dalam pengembangan web modern, mulai dari manipulasi DOM menggunakan JavaScript hingga pengelolaan data di server menggunakan PHP dan MySQL. Dengan implementasi state management melalui session, cookie, dan browser storage, aplikasi ini dapat memberikan pengalaman pengguna yang lebih dinamis dan responsif.
